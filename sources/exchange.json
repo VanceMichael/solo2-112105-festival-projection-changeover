@@ -1,0 +1,654 @@
+{
+  "releases": [
+    {
+      "name": "首发",
+      "routes": {
+        "/schedule/roster": {
+          "events": [
+            {
+              "show": "P14",
+              "rev": 1,
+              "combo": "FEN-zh",
+              "use": "正式场",
+              "hall": "风厅",
+              "device": "DC-F",
+              "date": "2026-11-25",
+              "fromTime": "19:30",
+              "toTime": "21:20",
+              "zone": "Asia/Bangkok"
+            },
+            {
+              "show": "P15",
+              "rev": 1,
+              "combo": "FEN-zh",
+              "use": "正式场",
+              "hall": "石厅",
+              "device": "DC-S",
+              "date": "2026-11-25",
+              "fromTime": "19:45",
+              "toTime": "21:35",
+              "zone": "Asia/Bangkok"
+            },
+            {
+              "show": "P14-T",
+              "rev": 1,
+              "combo": "FEN-trailer",
+              "use": "试播",
+              "hall": "风厅",
+              "device": "DC-F",
+              "date": "2026-11-25",
+              "fromTime": "16:10",
+              "toTime": "16:30",
+              "zone": "Asia/Bangkok"
+            }
+          ]
+        },
+        "/portal/shows": {
+          "layout": "choose",
+          "title": "影展授权交付",
+          "path": "/portal/package",
+          "labels": [
+            "场次",
+            "用途"
+          ],
+          "params": [
+            "show",
+            "use"
+          ],
+          "options": [
+            [
+              "P14",
+              "P15",
+              "P14-T"
+            ],
+            [
+              "正式场",
+              "试播"
+            ]
+          ]
+        },
+        "/portal/package?show=P14&use=%E6%AD%A3%E5%BC%8F%E5%9C%BA": {
+          "layout": "package",
+          "title": "P14 正式场",
+          "version": "v12",
+          "combo": "FEN-zh",
+          "downloads": [
+            {
+              "label": "影片载荷",
+              "asset": "D1",
+              "sha": "982af5f6baccfabd5a45c5bd26ef766ec38a488650bf31f621e94921106ec946",
+              "href": "/assets/FEN-zh/a"
+            },
+            {
+              "label": "字幕载荷",
+              "asset": "D2",
+              "sha": "01a4f4316472f872ad948eedd59335689c61f8c27700becd3dfaa12286fbfcb8",
+              "href": "/assets/FEN-zh/b"
+            }
+          ],
+          "licenses": [
+            {
+              "device": "DC-F",
+              "combo": "FEN-zh",
+              "use": "正式场",
+              "startUtc": "2026-11-25T12:20:00Z",
+              "endUtc": "2026-11-25T14:30:00Z"
+            }
+          ]
+        },
+        "/portal/package?show=P15&use=%E6%AD%A3%E5%BC%8F%E5%9C%BA": {
+          "layout": "package",
+          "title": "P15 正式场",
+          "version": "v12",
+          "combo": "FEN-zh",
+          "downloads": [
+            {
+              "label": "影片载荷",
+              "asset": "D1",
+              "sha": "982af5f6baccfabd5a45c5bd26ef766ec38a488650bf31f621e94921106ec946",
+              "href": "/assets/FEN-zh/stone/a"
+            },
+            {
+              "label": "字幕载荷",
+              "asset": "D2",
+              "sha": "01a4f4316472f872ad948eedd59335689c61f8c27700becd3dfaa12286fbfcb8",
+              "href": "/assets/FEN-zh/b"
+            }
+          ],
+          "licenses": [
+            {
+              "device": "DC-S",
+              "combo": "FEN-zh",
+              "use": "正式场",
+              "startUtc": "2026-11-25T12:40:00Z",
+              "endUtc": "2026-11-25T14:45:00Z"
+            }
+          ]
+        },
+        "/portal/package?show=P14-T&use=%E8%AF%95%E6%92%AD": {
+          "layout": "package",
+          "title": "P14-T 试播",
+          "version": "v5",
+          "combo": "FEN-trailer",
+          "downloads": [
+            {
+              "label": "试播载荷",
+              "asset": "D3",
+              "sha": "d3d7be7290df118c6aac12e0c7e451a8a55e3c7aa77cbd09b2d4f870f305f827",
+              "href": "/assets/FEN-trailer/a"
+            }
+          ],
+          "licenses": [
+            {
+              "device": "DC-F",
+              "combo": "FEN-trailer",
+              "use": "试播",
+              "startUtc": "2026-11-25T09:00:00Z",
+              "endUtc": "2026-11-25T09:40:00Z"
+            }
+          ]
+        },
+        "/assets/FEN-zh/a": {
+          "mime": "text/plain; charset=utf-8",
+          "text": "仿照放映端秘钥本体的无效演练文本，不能用于放映。\n"
+        },
+        "/assets/FEN-zh/stone/a": {
+          "mime": "text/plain; charset=utf-8",
+          "text": "仿照放映端秘钥本体的无效演练文本，不能用于放映。\n"
+        },
+        "/assets/FEN-zh/b": {
+          "mime": "text/plain; charset=utf-8",
+          "text": "仿照影展交付的字幕打包说明。\n"
+        },
+        "/assets/FEN-trailer/a": {
+          "mime": "text/plain; charset=utf-8",
+          "text": "演练画面组成：短场预告。\n"
+        },
+        "/terminals/imports": {
+          "receipts": [
+            {
+              "id": "DC-F-P14-v12",
+              "device": "DC-F",
+              "show": "P14",
+              "version": "v12",
+              "use": "正式场",
+              "status": "imported"
+            },
+            {
+              "id": "DC-S-P15-v12",
+              "device": "DC-S",
+              "show": "P15",
+              "version": "v12",
+              "use": "正式场",
+              "status": "imported"
+            },
+            {
+              "id": "DC-F-P14-T-v5",
+              "device": "DC-F",
+              "show": "P14-T",
+              "version": "v5",
+              "use": "试播",
+              "status": "imported"
+            }
+          ]
+        },
+        "/terminals/inventory": {
+          "devices": [
+            {
+              "id": "DC-F",
+              "online": true
+            },
+            {
+              "id": "DC-S",
+              "online": true
+            },
+            {
+              "id": "DC-N",
+              "online": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "换厅",
+      "routes": {
+        "/schedule/roster": {
+          "events": [
+            {
+              "show": "P14",
+              "rev": 2,
+              "combo": "FEN-zh",
+              "use": "正式场",
+              "hall": "泥厅",
+              "device": "DC-N",
+              "date": "2026-11-25",
+              "fromTime": "19:30",
+              "toTime": "22:05",
+              "zone": "Asia/Bangkok"
+            },
+            {
+              "show": "P15",
+              "rev": 1,
+              "combo": "FEN-zh",
+              "use": "正式场",
+              "hall": "石厅",
+              "device": "DC-S",
+              "date": "2026-11-25",
+              "fromTime": "19:45",
+              "toTime": "21:35",
+              "zone": "Asia/Bangkok"
+            },
+            {
+              "show": "P14-T",
+              "rev": 1,
+              "combo": "FEN-trailer",
+              "use": "试播",
+              "hall": "风厅",
+              "device": "DC-F",
+              "date": "2026-11-25",
+              "fromTime": "16:10",
+              "toTime": "16:30",
+              "zone": "Asia/Bangkok"
+            }
+          ]
+        },
+        "/portal/shows": {
+          "layout": "choose",
+          "title": "影展授权交付",
+          "path": "/portal/package",
+          "labels": [
+            "场次",
+            "用途"
+          ],
+          "params": [
+            "show",
+            "use"
+          ],
+          "options": [
+            [
+              "P14",
+              "P15",
+              "P14-T"
+            ],
+            [
+              "正式场",
+              "试播"
+            ]
+          ]
+        },
+        "/portal/package?show=P14&use=%E6%AD%A3%E5%BC%8F%E5%9C%BA": {
+          "layout": "package",
+          "title": "P14 正式场",
+          "version": "v13",
+          "combo": "FEN-zh",
+          "downloads": [
+            {
+              "label": "影片载荷",
+              "asset": "D1",
+              "sha": "982af5f6baccfabd5a45c5bd26ef766ec38a488650bf31f621e94921106ec946",
+              "href": "/assets/FEN-zh/a2"
+            },
+            {
+              "label": "字幕载荷",
+              "asset": "D2",
+              "sha": "01a4f4316472f872ad948eedd59335689c61f8c27700becd3dfaa12286fbfcb8",
+              "href": "/assets/FEN-zh/b"
+            }
+          ],
+          "licenses": [
+            {
+              "device": "DC-N",
+              "combo": "FEN-zh",
+              "use": "正式场",
+              "startUtc": "2026-11-25T12:15:00Z",
+              "endUtc": "2026-11-25T14:30:00Z"
+            }
+          ]
+        },
+        "/portal/package?show=P15&use=%E6%AD%A3%E5%BC%8F%E5%9C%BA": {
+          "layout": "package",
+          "title": "P15 正式场",
+          "version": "v12",
+          "combo": "FEN-zh",
+          "downloads": [
+            {
+              "label": "影片载荷",
+              "asset": "D1",
+              "sha": "982af5f6baccfabd5a45c5bd26ef766ec38a488650bf31f621e94921106ec946",
+              "href": "/assets/FEN-zh/stone/a"
+            },
+            {
+              "label": "字幕载荷",
+              "asset": "D2",
+              "sha": "01a4f4316472f872ad948eedd59335689c61f8c27700becd3dfaa12286fbfcb8",
+              "href": "/assets/FEN-zh/b"
+            }
+          ],
+          "licenses": [
+            {
+              "device": "DC-S",
+              "combo": "FEN-zh",
+              "use": "正式场",
+              "startUtc": "2026-11-25T12:40:00Z",
+              "endUtc": "2026-11-25T14:45:00Z"
+            }
+          ]
+        },
+        "/portal/package?show=P14-T&use=%E8%AF%95%E6%92%AD": {
+          "layout": "package",
+          "title": "P14-T 试播",
+          "version": "v5",
+          "combo": "FEN-trailer",
+          "downloads": [
+            {
+              "label": "试播载荷",
+              "asset": "D3",
+              "sha": "d3d7be7290df118c6aac12e0c7e451a8a55e3c7aa77cbd09b2d4f870f305f827",
+              "href": "/assets/FEN-trailer/a"
+            }
+          ],
+          "licenses": [
+            {
+              "device": "DC-F",
+              "combo": "FEN-trailer",
+              "use": "试播",
+              "startUtc": "2026-11-25T09:00:00Z",
+              "endUtc": "2026-11-25T09:40:00Z"
+            }
+          ]
+        },
+        "/assets/FEN-zh/a": {
+          "status": 410,
+          "mime": "application/json",
+          "text": "{\"error\":\"此次临时链接已失效\"}",
+          "headers": {}
+        },
+        "/assets/FEN-zh/stone/a": {
+          "mime": "text/plain; charset=utf-8",
+          "text": "仿照放映端秘钥本体的无效演练文本，不能用于放映。\n"
+        },
+        "/assets/FEN-zh/b": {
+          "mime": "text/plain; charset=utf-8",
+          "text": "仿照影展交付的字幕打包说明。\n"
+        },
+        "/assets/FEN-trailer/a": {
+          "mime": "text/plain; charset=utf-8",
+          "text": "演练画面组成：短场预告。\n"
+        },
+        "/terminals/imports": {
+          "receipts": [
+            {
+              "id": "DC-F-P14-v12",
+              "device": "DC-F",
+              "show": "P14",
+              "version": "v12",
+              "use": "正式场",
+              "status": "imported"
+            },
+            {
+              "id": "DC-S-P15-v12",
+              "device": "DC-S",
+              "show": "P15",
+              "version": "v12",
+              "use": "正式场",
+              "status": "imported"
+            },
+            {
+              "id": "DC-F-P14-T-v5",
+              "device": "DC-F",
+              "show": "P14-T",
+              "version": "v5",
+              "use": "试播",
+              "status": "imported"
+            }
+          ]
+        },
+        "/terminals/inventory": {
+          "devices": [
+            {
+              "id": "DC-F",
+              "online": false
+            },
+            {
+              "id": "DC-S",
+              "online": true
+            },
+            {
+              "id": "DC-N",
+              "online": true
+            }
+          ]
+        },
+        "/assets/FEN-zh/a2": {
+          "mime": "text/plain; charset=utf-8",
+          "text": "仿照放映端秘钥本体的无效演练文本，不能用于放映。\n"
+        }
+      }
+    },
+    {
+      "name": "新授权",
+      "routes": {
+        "/schedule/roster": {
+          "events": [
+            {
+              "show": "P14",
+              "rev": 2,
+              "combo": "FEN-zh",
+              "use": "正式场",
+              "hall": "泥厅",
+              "device": "DC-N",
+              "date": "2026-11-25",
+              "fromTime": "19:30",
+              "toTime": "22:05",
+              "zone": "Asia/Bangkok"
+            },
+            {
+              "show": "P15",
+              "rev": 1,
+              "combo": "FEN-zh",
+              "use": "正式场",
+              "hall": "石厅",
+              "device": "DC-S",
+              "date": "2026-11-25",
+              "fromTime": "19:45",
+              "toTime": "21:35",
+              "zone": "Asia/Bangkok"
+            },
+            {
+              "show": "P14-T",
+              "rev": 1,
+              "combo": "FEN-trailer",
+              "use": "试播",
+              "hall": "风厅",
+              "device": "DC-F",
+              "date": "2026-11-25",
+              "fromTime": "16:10",
+              "toTime": "16:30",
+              "zone": "Asia/Bangkok"
+            }
+          ]
+        },
+        "/portal/shows": {
+          "layout": "choose",
+          "title": "影展授权交付",
+          "path": "/portal/package",
+          "labels": [
+            "场次",
+            "用途"
+          ],
+          "params": [
+            "show",
+            "use"
+          ],
+          "options": [
+            [
+              "P14",
+              "P15",
+              "P14-T"
+            ],
+            [
+              "正式场",
+              "试播"
+            ]
+          ]
+        },
+        "/portal/package?show=P14&use=%E6%AD%A3%E5%BC%8F%E5%9C%BA": {
+          "layout": "package",
+          "title": "P14 正式场",
+          "version": "v13",
+          "combo": "FEN-zh",
+          "downloads": [
+            {
+              "label": "影片载荷",
+              "asset": "D1",
+              "sha": "982af5f6baccfabd5a45c5bd26ef766ec38a488650bf31f621e94921106ec946",
+              "href": "/assets/FEN-zh/a2"
+            },
+            {
+              "label": "字幕载荷",
+              "asset": "D2",
+              "sha": "01a4f4316472f872ad948eedd59335689c61f8c27700becd3dfaa12286fbfcb8",
+              "href": "/assets/FEN-zh/b"
+            }
+          ],
+          "licenses": [
+            {
+              "device": "DC-N",
+              "combo": "FEN-zh",
+              "use": "正式场",
+              "startUtc": "2026-11-25T12:10:00Z",
+              "endUtc": "2026-11-25T15:20:00Z"
+            }
+          ]
+        },
+        "/portal/package?show=P15&use=%E6%AD%A3%E5%BC%8F%E5%9C%BA": {
+          "layout": "package",
+          "title": "P15 正式场",
+          "version": "v12",
+          "combo": "FEN-zh",
+          "downloads": [
+            {
+              "label": "影片载荷",
+              "asset": "D1",
+              "sha": "982af5f6baccfabd5a45c5bd26ef766ec38a488650bf31f621e94921106ec946",
+              "href": "/assets/FEN-zh/stone/a"
+            },
+            {
+              "label": "字幕载荷",
+              "asset": "D2",
+              "sha": "01a4f4316472f872ad948eedd59335689c61f8c27700becd3dfaa12286fbfcb8",
+              "href": "/assets/FEN-zh/b"
+            }
+          ],
+          "licenses": [
+            {
+              "device": "DC-S",
+              "combo": "FEN-zh",
+              "use": "正式场",
+              "startUtc": "2026-11-25T12:40:00Z",
+              "endUtc": "2026-11-25T14:45:00Z"
+            }
+          ]
+        },
+        "/portal/package?show=P14-T&use=%E8%AF%95%E6%92%AD": {
+          "layout": "package",
+          "title": "P14-T 试播",
+          "version": "v5",
+          "combo": "FEN-trailer",
+          "downloads": [
+            {
+              "label": "试播载荷",
+              "asset": "D3",
+              "sha": "d3d7be7290df118c6aac12e0c7e451a8a55e3c7aa77cbd09b2d4f870f305f827",
+              "href": "/assets/FEN-trailer/a"
+            }
+          ],
+          "licenses": [
+            {
+              "device": "DC-F",
+              "combo": "FEN-trailer",
+              "use": "试播",
+              "startUtc": "2026-11-25T09:00:00Z",
+              "endUtc": "2026-11-25T09:40:00Z"
+            }
+          ]
+        },
+        "/assets/FEN-zh/a": {
+          "status": 410,
+          "mime": "application/json",
+          "text": "{\"error\":\"此次临时链接已失效\"}",
+          "headers": {}
+        },
+        "/assets/FEN-zh/stone/a": {
+          "mime": "text/plain; charset=utf-8",
+          "text": "仿照放映端秘钥本体的无效演练文本，不能用于放映。\n"
+        },
+        "/assets/FEN-zh/b": {
+          "mime": "text/plain; charset=utf-8",
+          "text": "仿照影展交付的字幕打包说明。\n"
+        },
+        "/assets/FEN-trailer/a": {
+          "mime": "text/plain; charset=utf-8",
+          "text": "演练画面组成：短场预告。\n"
+        },
+        "/terminals/imports": {
+          "receipts": [
+            {
+              "id": "DC-F-P14-v12",
+              "device": "DC-F",
+              "show": "P14",
+              "version": "v12",
+              "use": "正式场",
+              "status": "imported"
+            },
+            {
+              "id": "DC-S-P15-v12",
+              "device": "DC-S",
+              "show": "P15",
+              "version": "v12",
+              "use": "正式场",
+              "status": "imported"
+            },
+            {
+              "id": "DC-N-P14-v13",
+              "device": "DC-N",
+              "show": "P14",
+              "version": "v13",
+              "use": "正式场",
+              "status": "imported"
+            },
+            {
+              "id": "DC-F-P14-T-v5",
+              "device": "DC-F",
+              "show": "P14-T",
+              "version": "v5",
+              "use": "试播",
+              "status": "imported"
+            }
+          ]
+        },
+        "/terminals/inventory": {
+          "devices": [
+            {
+              "id": "DC-F",
+              "online": false
+            },
+            {
+              "id": "DC-S",
+              "online": true
+            },
+            {
+              "id": "DC-N",
+              "online": true
+            }
+          ]
+        },
+        "/assets/FEN-zh/a2": {
+          "mime": "text/plain; charset=utf-8",
+          "text": "仿照放映端秘钥本体的无效演练文本，不能用于放映。\n"
+        }
+      }
+    }
+  ]
+}
