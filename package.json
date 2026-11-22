@@ -8,7 +8,8 @@
   },
   "scripts": {
     "origin": "node origin/origin.mjs",
-    "test": "node --test origin/source.test.mjs origin/browser.test.mjs"
+    "desk": "node desk/cli.mjs",
+    "test": "node --test origin/source.test.mjs origin/browser.test.mjs test/desk.test.mjs test/desk-browser.test.mjs"
   },
   "devDependencies": {
     "playwright": "1.56.1"
